@@ -2,7 +2,6 @@ package com.spring.transaction.demo.spring_transaction.service;
 
 import com.spring.transaction.demo.spring_transaction.entity.Seat;
 import com.spring.transaction.demo.spring_transaction.repository.SeatRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

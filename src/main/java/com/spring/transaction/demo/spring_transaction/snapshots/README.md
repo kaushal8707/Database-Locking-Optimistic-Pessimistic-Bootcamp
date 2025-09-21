@@ -89,9 +89,10 @@ Pessimistic Locking
 
 
 
-Demo Example & Demonstration (Code)    -  (Optimistic Locking)
---------------------------------------------------------------
+Demo Example & Demonstration (Code)  
+-----------------------------------
 
+# Optimistic Locking
 
   we will create multiple threads to simulate the exact flow.
   ** we need to see while 2 Threads trying to call the same method then how the locking mechanism will work and How version
@@ -104,45 +105,90 @@ Demo Example & Demonstration (Code)    -  (Optimistic Locking)
        @Version
        private int version;
 
+** So here just to give some idea i am creating 2 threads manually but if you want to test it in a better way
+    you can do load testing, you can concurrently add 10 or 15 threads. you can use JMeter or any other tool for
+    load testing. 
+
   ![img_6.png](img_6.png)
 
-  ![img_4.png](img_4.png)
+  ![img_23.png](img_23.png)
 
-  ![img_5.png](img_5.png)
+  ![img_24.png](img_24.png)
 
-  ![img_7.png](img_7.png)
+  ![img_25.png](img_25.png)
 
-  ![img_8.png](img_8.png)
+  ![img_26.png](img_26.png)
 
-  ![img_9.png](img_9.png)
+  ![img_27.png](img_27.png)
 
-    Insert into seat (booked, movie_name, version) values (0, 'Inception', 0);
-    Insert into seat (booked, movie_name, version) values (0, 'Titanic', 0);
-    Insert into seat (booked, movie_name, version) values (0, 'Avengers', 0);
-    Insert into seat (booked, movie_name, version) values (0, 'Intestaller', 0);
-    Insert into seat (booked, movie_name, version) values (0, 'Dark Night', 0);
+  ![img_28.png](img_28.png)
 
   http://localhost:8080/swagger-ui/index.html#
 
-  ![img_10.png](img_10.png)
 
-  ![img_11.png](img_11.png)
+    Insert into seat (booked, movieName, version) values (false, 'Inception', 0);
+    Insert into seat (booked, movieName, version) values (false, 'Titanic', 0);
+    Insert into seat (booked, movieName, version) values (false, 'Avengers', 0);
+    Insert into seat (booked, movieName, version) values (false, 'Intestaller', 0);
+    Insert into seat (booked, movieName, version) values (false, 'Dark Night', 0);
 
-  ![img_12.png](img_12.png)
-  ![img_13.png](img_13.png)
-  
+  ![img_29.png](img_29.png)
+
+   you need to observed the field called version, because we are playing with the optimistic locking
+   mechanism and this version plays a cruicial role with this mechanism. currently there is no update
+   on any record, so the version is 0. 
+
+   now let's test this titanic so the id is 2. 
+
+   ![img_30.png](img_30.png)
+
+   Observations-
+
+    There is a thread 1 and Thread 2 both thread will call the bookSeat() method so first we are fetching the Seat from the DB.
+    we will get information for id 2, (2, false, titanic, 0).
+    At same time Thread 2 also will fetch and he weill also have same information for id 2, (2, false, titanic, 0).
+    Both will have same copy of existing seat object. 
+    
+    we don't know first thread 1 will get a chance or thread 2 will get a chance.
+    let's assume thread 1 get a chance to Book the Seat.
+    Once Thread 1 execute or book the seat, the value will be changed like (2, true, titanic, 1) so the status will be
+    2 and the version will be changed to 1. now Thread 1 has done.
+    
+   ![img_31.png](img_31.png)    
+
+
+    Now Thread 2 get a chance and once he will execute and he will do the update and he will first do the version check.
+    update(version check)
+    For Seat Id /Movie Id 2 what is the current version we have in db is 1 and what copy of version this thread 2 will have
+    is 0. 
+    so there is a version mis-match. so thread 2 will get exception like another person already booked or modified the records.
+    because you are having the stale data you are not having the data which is up to date. 
+    so expected result should be like below
+   
+   ![img_32.png](img_32.png)
+
+   ![img_33.png](img_33.png) 
+
+   Very Important Point->
+    This is How Optimistic will always validate the version before allowing you to modifiy anything into the records.
+    If the version is not match he will simply give you the error. 
+
+   so here the point is while we are doing 
+    
+    seatRepository.findById(seatId)   ->   it is giving o as a version for both thread
+    
+    seatRepository.save(seat);        ->   version check is happen at this point for thread 1 it is 0 so allowed and updated to 1
+                                            but for thread 2 now while update it found 1 which is updated by thread 1 but the thread
+                                            2 earlier read value is 0 so version mismatched so for thread 1 success and Thread 2 failed.
+
+   ![img_34.png](img_34.png)
+
   
 
 
 
 Pessimistic Locking
 ===================
-
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
-    @Query("SELECT s FROM Seat s WHERE s.id= :seatId")
-    Seat findByIdAndLock(Long seatId);
-
-
 
     What this Pessimistic Locking will do is It will apply the Lock on the table. so that If one Thread is doing something
     another thread must have to wait untill and unless 1st Thread is completing his task and release the lock.
@@ -160,21 +206,34 @@ Pessimistic Locking
     *** there is no concept of version in pessimistic so remove version things from common code.
     *** this Locking need to be in a Boundry of @Transactional.
 
-![img_14.png](img_14.png)
+   ![img_35.png](img_35.png)
 
-![img_15.png](img_15.png)
+   ![img_36.png](img_36.png)
 
-![img_16.png](img_16.png)
+   ![img_37.png](img_37.png)
 
-![img_17.png](img_17.png)
+   ![img_38.png](img_38.png)
 
-![img_19.png](img_19.png)
+   ![img_40.png](img_40.png)
+    
+   ![img_41.png](img_41.png)
 
-![img_21.png](img_21.png)
+   ![img_42.png](img_42.png)
 
-![img_22.png](img_22.png)
+Imp - 
 
+   Main Difference Between Pessimistic Lock & Hibernate Serializable Isolation Level
 
+    Pessimistic Lock - Database Level Locking
+    Serializable Isolation Level - Transaction Level Locking
+
+  ![img_43.png](img_43.png)
+
+  ![img_44.png](img_44.png)
+
+  Both lock the record before update
+
+  Pessimistic will lock the complete row or table for that particular id.
 
 Diff between Pessimistic Lock & Hibernate Serializable Isolation Level
 =======================================================================
