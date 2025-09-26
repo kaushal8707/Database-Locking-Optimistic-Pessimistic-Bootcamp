@@ -488,6 +488,249 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "composite-primary-key",
+			"item": [
+				{
+					"name": "v1",
+					"item": [
+						{
+							"name": "2 - tryingToSaveWithSameEmployeeIdAndDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"empId\":100,\r\n  \"deptId\":10,\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"8749064048\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4 - tryingToSaveWithDifferentEmployeeIdAndSameDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"empId\":101,\r\n  \"deptId\":10,\r\n  \"name\":\"raghu\",\r\n  \"email\":\"raghu@gmail.com\",\r\n  \"phone\":\"3142524353\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "1 - saveEmployeeWithDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"empId\":100,\r\n  \"deptId\":10,\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"8749064048\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3 - tryingToSaveWithSameEmployeeIdAndDifferentDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"empId\":100,\r\n  \"deptId\":11,\r\n  \"name\":\"raghu\",\r\n  \"email\":\"raghu@gmail.com\",\r\n  \"phone\":\"3142524353\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"employee"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "v2",
+					"item": [
+						{
+							"name": "1 - saveEmployeeWithDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pkId2\":{\r\n      \"empId\":111,\r\n      \"deptId\":55\r\n  },\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"1234567890\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2 - tryingToSaveWithSameEmployeeIdAndDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pkId2\":{\r\n      \"empId\":111,\r\n      \"deptId\":55\r\n  },\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"1234567890\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3 - tryingToSaveWithSameEmployeeIdAndDifferentDepartmentId Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pkId2\":{\r\n      \"empId\":111,\r\n      \"deptId\":56\r\n  },\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"1234567890\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4 - tryingToSaveWithDifferentEmployeeIdAndSameDepartmentId",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"pkId2\":{\r\n      \"empId\":112,\r\n      \"deptId\":55\r\n  },\r\n  \"name\":\"Kaushal\",\r\n  \"email\":\"kaushal@gmail.com\",\r\n  \"phone\":\"1234567890\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/v2/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"v2",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
 		}
 	]
 }
