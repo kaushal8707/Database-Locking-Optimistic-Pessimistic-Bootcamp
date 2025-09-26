@@ -399,6 +399,95 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "pagination-and-sorting",
+			"item": [
+				{
+					"name": "1 - getAllProductCountWithProductList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - getProductsListInSortedOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/quantity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"quantity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - getProductsWithPagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/pagination/3/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"pagination",
+								"3",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - getProductsWithPaginationAndSort",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/paginationAndSort/7/10/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"paginationAndSort",
+								"7",
+								"10",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
