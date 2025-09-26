@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4926a70a-2a34-4aad-9f03-b98e6da30a20" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Boot  JPA  Hibernate Composite Primary Key Example.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Boot  Pagination and Sorting with Spring Data JPA.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Boot, MySQL, JPA, Hibernate Restful CRUD API Example.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Boot-Spring Data JPA Many to Many Bidirectional Relationship Example.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Boot___PUT &amp; PATCH REST APIs.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring Data JPA - One to Many &amp; Join Query.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/many_to_many/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/many_to_many/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/many_to_many/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/many_to_many/StudentCourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/many_to_many/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_bidirectional/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_bidirectional/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_bidirectional/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_bidirectional/LibraryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_bidirectional/LibraryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/dto/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/one_to_many/one_to_many_unidirectional/dto/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/Spring Data JPA - One to Many &amp; Join Query.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/README/one-to-many-bidirectional.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/SpringTransactionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selfdeveloped/jpa/SpringDataJpaMappingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/controller/BookTicketController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/entity/Seat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/repository/SeatRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/service/MovieTicketBookingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/service/OptimisticSeatBookingTestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/service/PessimisticSeatBookingTestService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/transaction/demo/spring_transaction/snapshots/img_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kaushal8707&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kaushal8707/Database-Locking-Optimistic-Pessimistic-Bootcamp.git&quot;,
+    &quot;accountId&quot;: &quot;003bd423-a2db-4777-9427-1fc833fdf98d&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="330QMdX0DiOoXMsV5mexE3wDXXk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven. [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-data-jpa-mapping [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-data-jpa-mapping [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-hibernate-bootcamp [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-hibernate-bootcamp [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-hibernate-bootcamp [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringDataJpaMappingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringTransactionApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.spring-hibernate-bootcamp.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/e162554/OneDrive - Mastercard/Interview/TX/spring-hibernate-bootcamp/src/main/java/com/selfdeveloped/jpa/repository&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\e162554\OneDrive - Mastercard\Interview\TX\spring-hibernate-bootcamp\src\main\java\com\selfdeveloped\jpa\repository" />
+      <recent name="C:\Users\e162554\OneDrive - Mastercard\Interview\TX\spring-hibernate-bootcamp\src\main\java\com\selfdeveloped\jpa\entity\one_to_many_bidirectional" />
+      <recent name="C:\Users\e162554\OneDrive - Mastercard\Interview\TX\spring-hibernate-bootcamp\src\main\java\com\selfdeveloped\jpa" />
+      <recent name="C:\Users\e162554\OneDrive - Mastercard\Interview\TX\Database-Locking-Optimistic-Pessimistic-Bootcamp" />
+      <recent name="C:\Users\e162554\OneDrive - Mastercard\Interview\TX\Database-Locking-Optimistic-Pessimistic-Bootcamp\src\main\java\com\spring\transaction\demo\spring_transaction\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.selfdeveloped.jpa.repository" />
+      <recent name="com.selfdeveloped.jpa.entity" />
+      <recent name="com.spring.hibernate.demo.entity" />
+      <recent name="com.spring.transaction.demo.spring_transaction.controller" />
+      <recent name="com.spring.transaction.demo.spring_transaction.entity" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringDataJpaMappingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-hibernate-bootcamp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.selfdeveloped.jpa.SpringDataJpaMappingApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.selfdeveloped.jpa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringDataJpaMappingApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4926a70a-2a34-4aad-9f03-b98e6da30a20" name="Changes" comment="" />
+      <created>1758451462704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758451462704</updated>
+      <workItem from="1758451463757" duration="479000" />
+      <workItem from="1758615825285" duration="495000" />
+      <workItem from="1758616470717" duration="1427000" />
+      <workItem from="1758719988915" duration="4507000" />
+      <workItem from="1758777786356" duration="19931000" />
+      <workItem from="1758860852135" duration="301000" />
+      <workItem from="1758861290452" duration="4076000" />
+      <workItem from="1758865623203" duration="2201000" />
+      <workItem from="1758867846684" duration="1896000" />
+      <workItem from="1758872719015" duration="7968000" />
+      <workItem from="1758880815455" duration="1738000" />
+      <workItem from="1758883569800" duration="1284000" />
+      <workItem from="1758884879983" duration="443000" />
+      <workItem from="1758885339728" duration="648000" />
+      <workItem from="1758886007743" duration="1682000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1758451884680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758451884680</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+</project>

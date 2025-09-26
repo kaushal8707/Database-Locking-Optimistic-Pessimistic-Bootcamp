@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "98962ec4-9be2-4a52-8488-bf71fcecf723",
+		"name": "spring-hibernate-jpa-bootcamp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47834902"
+	},
+	"item": [
+		{
+			"name": "oneToMany-Uni-Directional-JOIN-Query",
+			"item": [
+				{
+					"name": "1 - place_order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"customer\": {\r\n     \"name\": \"mnb\",\r\n     \"email\": \"ip@gmail.com\",\r\n     \"gender\": \"male\",\r\n     \"products\": [\r\n       {\r\n         \"pid\": 9876,\r\n         \"productName\": \"fgg\",\r\n         \"price\": 1212,\r\n\t     \"qty\": 1\r\n       },\r\n       {\r\n         \"pid\": 7655,\r\n         \"productName\": \"jjh\",\r\n         \"price\": 656,\r\n\t     \"qty\": 2\r\n       }\r\n     ]\r\n   }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/placeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - findAllOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/findAllOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"findAllOrders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - join-query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/getInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"getInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - getCustomerByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/ms@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"ms@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5 - getCustomerByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customerByName/abc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customerByName",
+								"abc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "6 - updateCustomerEmail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/update_customer_data/3/etw@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"update_customer_data",
+								"3",
+								"etw@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "7 - changeEmail",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/change_customer_data/1/changed@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"change_customer_data",
+								"1",
+								"changed@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "oneToMany-Bi-Directional",
+			"item": [
+				{
+					"name": "1 - createLibraryWithBooks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Learning3\",\r\n  \"books\": [\r\n    {\r\n        \"name\": \"Security Lookup 3\"\r\n    },\r\n    {\r\n        \"name\": \"Learning Kafka 3\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/libraries",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"libraries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - getLibraryWithBooksById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/libraries/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"libraries",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - deleteLibraryWithBooksById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/libraries/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"libraries",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - updateBooksInLibrary",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Learning2\",\r\n  \"books\": [\r\n    {\r\n        \"name\": \"Security Lookup V.1\"\r\n    },\r\n    {\r\n        \"name\": \"Learning Kafka V.1\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/libraries/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"libraries",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "manyTomany-Bi-Directional",
+			"item": [
+				{
+					"name": "1 - addStudentCourses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"daksh\",\r\n    \"age\": 32,\r\n    \"dept\": \"BackEnd\",\r\n    \"courses\": [\r\n        {\r\n            \"title\": \"Spring 2\",\r\n            \"abbreviation\": \"wer\",\r\n            \"modules\": 11,\r\n            \"fee\": 3330\r\n        },\r\n        {\r\n            \"title\": \"Auth1.0\",\r\n            \"abbreviation\": \"asd\",\r\n            \"modules\": 9,\r\n            \"fee\": 7777\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/student/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - fetchAllStudents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/student/course",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - fetchStudentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/student/course/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"course",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - findStudentsContainingByNames",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/student/course/find/d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"course",
+								"find",
+								"d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "5 - findCourseLessThanPrice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/student/course/search/6000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"student",
+								"course",
+								"search",
+								"6000"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
