@@ -1,0 +1,39 @@
+
+
+POST    http://localhost:8080/rest/operations/addProducts
+
+[
+{
+    "name":"x",
+    "quantity":1,
+    "price":987
+},
+{
+    "name":"y",
+    "quantity":1,
+    "price":654
+},
+{
+    "name":"z",
+    "quantity":1,
+    "price":321
+}
+]
+
+
+POST   http://localhost:8080/rest/operations/addProduct
+
+{
+    "name":"asdf",
+    "quantity":2,
+    "price":9807
+}
+
+GET   http://localhost:8080/rest/operations/productById/2
+
+GET   http://localhost:8080/rest/operations/product/z
+
+DELETE   http://localhost:8080/rest/operations/delete/4
+
+PUT   http://localhost:8080/rest/operations/update
+

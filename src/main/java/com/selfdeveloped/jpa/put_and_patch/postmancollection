@@ -1,0 +1,71 @@
+POST - http://localhost:8080/demo/products
+
+
+    {
+        "name": "Geysers",
+        "price": 3469,
+        "description": "Havells",
+        "productType": "Kitchen & Home"
+    }
+
+    {
+        "name": "IPhone13",
+        "price": 80000.0,
+        "description": "Apollo",
+        "productType": "Electronics"
+    }
+
+    {
+        "name": "Camera",
+        "price": 80000.0,
+        "description": "Canon",
+        "productType": "Electronics"
+    }
+
+    {
+        "name": "Mixer Grinder",
+        "price": 6999.0,
+        "description": "Bosch",
+        "productType": "Kitchen & Home"
+    }
+
+    {
+        "name": "Geysers2",
+        "price": 3461.0,
+        "description": "Havells2",
+        "productType": "Kitchen 2 & Home"
+    }
+
+
+GET    http://localhost:8080/demo/products
+
+GET    http://localhost:8080/demo/products/2
+
+PUT    http://localhost:8080/demo/products/5
+
+    {
+        "name": "Geysers2 updated",
+        "price": 99.0,
+        "description": "Havells2 updated",
+        "productType": "Kitchen 2 & Home updated"
+    }
+
+PUT    http://localhost:8080/demo/products/5
+
+    {
+        "name": "Geysers2 updated once again",
+        "price": 911119.0
+    }
+
+PATCH  http://localhost:8080/demo/products/5
+
+    {
+        "name": "Geysers2 updated once again 2nd time",
+        "price": 11.0
+    }
+
+PATCH  http://localhost:8080/demo/products/1
+
+    {
+        "price": 99999.0
+    }

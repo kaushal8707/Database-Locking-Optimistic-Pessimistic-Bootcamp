@@ -94,3 +94,10 @@ select count(*) from product_pagination_tbl;
 select * from employee;
 select * from employee2;
 
+
+-- Put and Patch Http Method
+select * from productputpatch
+
+-- crud rest operations
+
+
