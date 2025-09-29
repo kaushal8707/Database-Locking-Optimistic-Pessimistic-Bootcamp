@@ -731,6 +731,40 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "cascade-type-behavior",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"alexender\",\r\n  \"addresses2\": [\r\n    {\r\n        \"city\": \"c1\",\r\n        \"state\": \"s1\",\r\n        \"zipCode\": \"z1\"\r\n    },\r\n    {\r\n        \"city\": \"c2\",\r\n        \"state\": \"s2\",\r\n        \"zipCode\": \"z2\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cascade/behavior",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cascade",
+								"behavior"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

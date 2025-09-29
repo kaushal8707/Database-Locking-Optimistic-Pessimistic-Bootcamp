@@ -99,5 +99,14 @@ select * from employee2;
 select * from productputpatch
 
 -- crud rest operations
+select * from productop
+
+-- eager vs lazy
+select * from address1;
+select * from customer1;
+
+-- cascade type
+select * from address2;
+select * from customer2;
 
 

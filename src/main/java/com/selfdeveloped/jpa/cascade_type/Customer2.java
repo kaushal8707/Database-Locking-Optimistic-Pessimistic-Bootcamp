@@ -21,7 +21,13 @@ public class Customer2 {
     private Long id;
     private String name;
 
-    @OneToMany(mappedBy = "customer2",  cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "customer2",
+            cascade = {
+                    CascadeType.PERSIST,
+                    CascadeType.MERGE,
+                    CascadeType.REMOVE,
+                    CascadeType.REFRESH
+            })
     @JsonManagedReference
     private List<Address2> addresses2;
 }
