@@ -26,7 +26,8 @@ public class Customer2 {
                     CascadeType.PERSIST,
                     CascadeType.MERGE,
                     CascadeType.REMOVE,
-                    CascadeType.REFRESH
+                    CascadeType.REFRESH,
+                    CascadeType.DETACH
             })
     @JsonManagedReference
     private List<Address2> addresses2;

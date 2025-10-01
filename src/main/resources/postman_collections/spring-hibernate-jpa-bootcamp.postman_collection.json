@@ -737,12 +737,15 @@
 			"item": [
 				{
 					"name": "New Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\":\"alexender\",\r\n  \"addresses2\": [\r\n    {\r\n        \"city\": \"c1\",\r\n        \"state\": \"s1\",\r\n        \"zipCode\": \"z1\"\r\n    },\r\n    {\r\n        \"city\": \"c2\",\r\n        \"state\": \"s2\",\r\n        \"zipCode\": \"z2\"\r\n    }\r\n  ]\r\n}\r\n",
+							"raw": "{\r\n  \"name\":\"mathew\",\r\n  \"addresses2\": [\r\n    {\r\n        \"city\": \"c3\",\r\n        \"state\": \"s3\",\r\n        \"zipCode\": \"z3\"\r\n    },\r\n    {\r\n        \"city\": \"c3\",\r\n        \"state\": \"s3\",\r\n        \"zipCode\": \"z3\"\r\n    }\r\n  ]\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -750,7 +753,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/cascade/behavior",
+							"raw": "http://localhost:8080/cascade/behavior/detach/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -758,7 +761,128 @@
 							"port": "8080",
 							"path": [
 								"cascade",
-								"behavior"
+								"behavior",
+								"detach",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "n+1 problem",
+			"item": [
+				{
+					"name": "save customer with addresss",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"ronald\",\r\n  \"addresses\": [\r\n    {\r\n        \"city\": \"c5\",\r\n        \"state\": \"s5\",\r\n        \"zipCode\": \"z5\"\r\n    },\r\n    {\r\n        \"city\": \"c6\",\r\n        \"state\": \"s6\",\r\n        \"zipCode\": \"z6\"\r\n    },\r\n    {\r\n        \"city\": \"c7\",\r\n        \"state\": \"s7\",\r\n        \"zipCode\": \"z7\"\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch all customer with addresses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resolve n+1 using enity graph",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resolve n+1 using fetch join",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/fetch_join",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"fetch_join"
 							]
 						}
 					},

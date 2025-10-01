@@ -109,4 +109,9 @@ select * from customer1;
 select * from address2;
 select * from customer2;
 
+update address2 set city = 'DEL' where id = 6;
+
+delete from address2 where id in(5);
+commit;
+
 

@@ -196,24 +196,45 @@
     
     
     
-   # CascadeType : REFRESH
+   # CascadeType : DETACH
+
+    When we are detaching a parent do you want its child to be detaching or not. 
 
    ![img_53.png](img_53.png)
 
-    I am loading the customer from db and i am loading the address
+    I am loading the customer from db and I am loading the address, then validating Before Detach and After Detach
 
-    then validating Before Detach and After Detach
-
-    Before Using before detach when you detach the customer does It hold the address and 
-     then after detach when you retriving a customer does it hold the address or not
+    Before using cascade type detach when you detach the customer does It hold the address and then after detach 
+    when you retriving a customer does it hold the address or not
  
    ![img_54.png](img_54.png)
 
-   detach is not something deleted when you are detaching you are detaching that entity from the Context not from the database
-    as og now we have not used detach cascade type.
-    when you will detach the parent you will get the result below true
+    detach is not something deleted when you are detaching you are detaching that entity from the Context not from the database
+    as of now we have not used detach cascade type. 
 
    ![img_55.png](img_55.png)
 
-    17:40
+   ![img_56.png](img_56.png)
+
+   ![img_57.png](img_57.png)
+
+   ![img_58.png](img_58.png)
+
+    we can see before detach customer managed by the context is true, address managed by context is true.
+    after forcefully called detached
+    we can see after detach customer managed by the context is false, but still address managed by context is true,
+    which we are expacting to be false because we want child to be detached along with the parent.
+    so, How we can do that when we detach parent its asociated dependency also should get detached so, we can managed this
+    by using CascadeType.DETACHED.
+
+   ![img_59.png](img_59.png)
+
+   ![img_60.png](img_60.png)
+
+   These 6 type no need to use all based on use cases what operations you want to perform from parent to the child.
+   Instead of these diff types, you can even use CascadeType.ALL to perform all the actions.
+
+
+
+
     
